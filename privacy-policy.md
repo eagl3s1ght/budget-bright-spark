@@ -78,9 +78,9 @@ To delete your data:
 
 ## Contact Information
 For privacy-related questions:
-- Email: privacy@budgetbrightspark.com
-- Website: https://budgetbrightspark.com/privacy
-- Address: [Your Business Address]
+- Email: eagleenterprises08+budgetapp@gmail.com
+- Website: https://budget-app.antonolsson.se/
+- Address: Vetekornsgatan 6, 43146 Mölndal
 
 ## Compliance
 This privacy policy complies with:
@@ -91,6 +91,6 @@ This privacy policy complies with:
 
 ## Open Source
 - Our privacy policy is open source
-- Available on GitHub: [GitHub Repository URL]
+- Available on GitHub: https://github.com/eagl3s1ght/privacy-policy
 - Community contributions welcome
 - Transparent about all data practices 
