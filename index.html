@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Bright Spark - Privacy Policy</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #4F46E5;
+            --background-color: #1A1A1A;
+            --text-color: #FFFFFF;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-top: 2rem;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            opacity: 0.9;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "•";
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        strong {
+            color: var(--primary-color);
+        }
+
+        code {
+            background: rgba(79, 70, 229, 0.1);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        blockquote {
+            border-left: 4px solid var(--primary-color);
+            margin-left: 0;
+            padding-left: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="assets/logo.png" alt="Budget Bright Spark Logo" class="logo">
+        <h1>Budget Bright Spark</h1>
+        <p>Smart Personal Finance</p>
+    </div>
+
+    <div class="content">
+        <div id="privacy-policy-content">
+            <!-- Privacy policy content will be loaded here -->
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Budget Bright Spark. All rights reserved.</p>
+        <p>
+            <a href="https://github.com/budget-bright-spark/privacy-policy">View on GitHub</a> |
+            <a href="mailto:privacy@budgetbrightspark.com">Contact Us</a>
+        </p>
+    </div>
+
+    <script>
+        // Configure marked options
+        marked.setOptions({
+            breaks: true,
+            gfm: true,
+            headerIds: true
+        });
+
+        // Fetch and render the privacy policy
+        fetch('privacy-policy.md')
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById('privacy-policy-content').innerHTML = marked.parse(text);
+            })
+            .catch(error => {
+                console.error('Error loading privacy policy:', error);
+                document.getElementById('privacy-policy-content').innerHTML = '<p>Error loading privacy policy. Please try again later.</p>';
+            });
+    </script>
+</body>
+</html> 
